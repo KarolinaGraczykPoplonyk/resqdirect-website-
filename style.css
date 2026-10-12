@@ -1460,6 +1460,7 @@ footer {
 }
 
 .footer-column a {
+    display: block;
   margin-bottom: 9px;
 
   color: #8995a5;
@@ -3393,4 +3394,32 @@ footer {
   .contact-form-row .contact-image img {
     min-height: 340px;
   }
+}
+/* FACEBOOK SECTION */
+.facebook-section {
+  background: #101824;
+  padding: 65px 24px;
+  text-align: center;
+}
+
+.facebook-content {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.facebook-content h2 {
+  color: #ffffff;
+  font-size: clamp(28px, 4vw, 42px);
+  margin: 12px 0 18px;
+}
+
+.facebook-content > p:not(.section-label) {
+  color: #aeb8c6;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.facebook-content .btn {
+  display: inline-block;
 }
