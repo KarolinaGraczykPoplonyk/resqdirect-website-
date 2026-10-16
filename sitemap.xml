@@ -1,18 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
   <url>
     <loc>https://resqdirect.co.uk/</loc>
   </url>
+
+  <!-- Our Work -->
   <url>
-    <loc>https://resqdirect.co.uk/our-work</loc>
+    <loc>https://resqdirect.co.uk/our-work.html</loc>
   </url>
+
+  <!-- Existing Guides -->
   <url>
-    <loc>https://resqdirect.co.uk/can-a-non-running-car-be-transported</loc>
+    <loc>https://resqdirect.co.uk/what-to-do-if-your-car-breaks-down.html</loc>
   </url>
+
   <url>
-    <loc>https://resqdirect.co.uk/buying-a-car-at-auction</loc>
+    <loc>https://resqdirect.co.uk/can-a-non-running-car-be-transported.html</loc>
   </url>
+
   <url>
-    <loc>https://resqdirect.co.uk/what-to-do-if-your-car-breaks-down</loc>
+    <loc>https://resqdirect.co.uk/buying-a-car-at-auction.html</loc>
   </url>
+
+  <!-- New Guides -->
+  <url>
+    <loc>https://resqdirect.co.uk/electric-hybrid-car-recovery.html</loc>
+  </url>
+
+  <url>
+    <loc>https://resqdirect.co.uk/blocked-dpf-warning-regeneration-recovery.html</loc>
+  </url>
+
+  <url>
+    <loc>https://resqdirect.co.uk/how-much-does-car-recovery-cost-in-peterborough.html</loc>
+  </url>
+
 </urlset>

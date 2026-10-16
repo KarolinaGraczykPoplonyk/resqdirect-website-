@@ -3423,3 +3423,81 @@ footer {
 .facebook-content .btn {
   display: inline-block;
 }
+
+/* RESQ DIRECT — ARTICLE FORMATTING FIXES */
+
+/* Prevent article headings hiding behind the fixed menu */
+article h2,
+article h3,
+article section[id] {
+  scroll-margin-top: 115px;
+}
+
+/* Improve article table layout */
+article table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+  margin: 24px 0;
+}
+
+article th,
+article td {
+  padding: 12px 14px;
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: break-word;
+  line-height: 1.55;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+article th {
+  font-weight: 700;
+  background-color: #f5f5f5;
+}
+
+/* Improve spacing between article paragraphs */
+article p {
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+/* Allow tables to fit better on smaller screens */
+@media (max-width: 767px) {
+  article table {
+    font-size: 14px;
+  }
+
+  article th,
+  article td {
+    padding: 9px 7px;
+  }
+}
+
+/* ResQ Direct — article text readability */
+.article-content p,
+.article-content li {
+  color: #28313d;
+}
+
+/* ResQ Direct — article column alignment */
+.article-layout {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 30px;
+}
+
+.article-content {
+  min-width: 0;
+}
+
+.article-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .article-layout {
+    grid-template-columns: 1fr;
+  }
+}
