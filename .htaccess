@@ -1,0 +1,16 @@
+# ResQ Direct - URL redirects
+
+Options -MultiViews
+RewriteEngine On
+
+# 1. Redirect HTTP and www to HTTPS without www
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www\.resqdirect\.co\.uk$ [NC]
+RewriteRule ^ https://resqdirect.co.uk%{REQUEST_URI} [R=301,L,NE]
+
+# 2. Redirect extensionless URLs to existing .html pages
+RewriteCond %{THE_REQUEST} \s/+[^\s?]+(?:\?[^\s]*)?\s [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ /$1.html [R=301,L,NE]
